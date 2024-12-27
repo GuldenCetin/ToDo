@@ -24,7 +24,7 @@ const Card = ({ item, editTodo, deleteTodo }) => {
         <Modal  animationType="slide" transparent={true} visible={modalVisible} onRequestClose={() => setModalVisible(false)}>
           <View style={styles.modalView}>
 
-            <TextInput style={styles.input} value={newText} onChangeText={setNewText}  />
+            <TextInput style={styles.input} value={newText} onChangeText={setNewText} />
 
             <Button title={"Kaydet"} onPress={handleEdit} />
           </View>
